@@ -41,11 +41,11 @@ Go to folder data, put data in json file in it. I already put sacarsm data in th
 ### 3. Train model
 This step makes you wait very long but it is required to get weights of model before next step.
 ```
-python3 train.py --data-path ${} --epochs ${}
+python3 train.py --data-path ${} --epochs ${} --num-classes ${}
 ```
 For example:
 ```
-python3 train.py --data-path data/sarcasm.json --epochs 5
+python3 train.py --data-path data/sarcasm.json --epochs 5 --num-classes 2
 ```
 
 ### 4. Put sentences you want CharCNN to detect in test folder
@@ -56,7 +56,7 @@ python3 predict.py --data-path ${} --test-path ${} --num-classes ${}
 ```
 For exmaple:
 ```
-python3 predict.py --data-path data/sarcasm.json --test-path test/sentences.json --num-classes 2
+python3 predict.py --data-path data/sarcasm.json --test-path test/sentences.json 
 ```
 ### Now you will have output of test folder in result.json file in result folder
 
