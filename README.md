@@ -47,6 +47,7 @@ For example:
 ```
 python3 train.py --data-path data/sarcasm.json --epochs 5 --num-classes 2
 ```
+#### Large CharCNN take a lot of time to train
 
 ### 4. Put sentences you want CharCNN to detect in test folder
 
