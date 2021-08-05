@@ -52,11 +52,11 @@ python3 train.py --data-path data/sarcasm.json --epochs 5
 
 ### 5. Use model
 ```
-python3 predict.py --data-path ${} --test-path ${}
+python3 predict.py --data-path ${} --test-path ${} --num-classes ${}
 ```
 For exmaple:
 ```
-python3 predict.py --data-path data/sarcasm.json --test-path test/sentences.json
+python3 predict.py --data-path data/sarcasm.json --test-path test/sentences.json --num-classes 2
 ```
 ### Now you will have output of test folder in result.json file in result folder
 
