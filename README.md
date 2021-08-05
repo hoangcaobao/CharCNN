@@ -22,7 +22,7 @@ The model utilizes Convolution 1D to extract features of the text, after that go
 
 ### Training
 
-Small CharCNN and Large CharCNN take 5 epochs to get nearly 85% accuracy, but it will take a lot of time to train for Large CharCNN due to high number of parameters.
+Small CharCNN and Large CharCNN take me only 5 epochs to get nearly 85% accuracy, but it will take a lot of time to train for Large CharCNN due to high number of parameters.
 
 ---
 ## How to use my code
