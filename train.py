@@ -44,7 +44,7 @@ if __name__=="__main__":
     #Train Small CharCNN
     small_CharCNN=CharCNN(256, 1024, args.embedding_size, clean_data.vocab_size, clean_data.max_len, args.num_classes)
     small_CharCNN.compile(optimizer=Adam(args.learning_rate), loss="sparse_categorical_crossentropy", metrics=["acc"])
-    small_CharCNN.fit(clean_data.x_train, clean_data.y_train, validation_data=(clean_data.x_valid, clean_data.y_valid), epochs=args.epochs)
+    small_CharCNN.fit(clean_data.x_train, clean_data.y_train, validation_data=(clean_data.x_valid, clean_data.y_valid), epochs=args.epochs, batch_size=args.batch_size)
     small_CharCNN.save(args.small_model)
     
     #Train Large CharCNN
